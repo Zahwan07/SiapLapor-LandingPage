@@ -88,6 +88,10 @@ h6 {
   z-index: 997;
 }
 
+header .sitename span{
+  color: #1de5ff;
+}
+
 .header .logo {
   line-height: 1;
 }
@@ -145,7 +149,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(14, 29, 52, 0.9);
+  --background-color: rgba(11, 32, 59, 0.9);
 }
 
 /*--------------------------------------------------------------
@@ -395,6 +399,10 @@ h6 {
   background-color: var(--background-color);
   font-size: 14px;
   position: relative;
+}
+
+.footer .sitename span{
+  color: #1de5ff;
 }
 
 .footer .footer-top {
