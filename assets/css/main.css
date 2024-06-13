@@ -140,6 +140,50 @@ header .sitename span{
     order: 3;
   }
 }
+/* Styles for the Login and Register buttons */
+.btn-login, .btn-register {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.btn-login {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-register {
+  background-color: #28a745; /* Bootstrap success green */
+  color: white;
+}
+
+.btn-register:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive alignment for smaller screens */
+@media (max-width: 768px) {
+  .d-flex.justify-content-center {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-login, .btn-register {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
 
 .scrolled .header {
   padding: 10px 0;
@@ -261,6 +305,118 @@ header .sitename span{
     visibility: visible;
   }
 }
+/* Container Styling */
+.col-lg-9 {
+  margin: 0 auto; /* Center the container */
+  max-width: 1200px;
+}
+
+.blog-wrap {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Row Block */
+.blog-row-block {
+  margin-bottom: 20px;
+}
+
+.blog-row-border {
+  padding: 20px;
+  background-color: #ffffff; /* White background for each post */
+  border: 1px solid #e9ecef; /* Light border for each post */
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+/* Blog Image */
+.blog-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Blog Content */
+.blog-content {
+  margin-left: 15px;
+}
+
+.blog-content span {
+  display: block;
+  font-size: 14px;
+  color: #6c757d; /* Muted text color */
+  margin-bottom: 5px;
+}
+
+.blog-content h3 {
+  font-size: 18px;
+  color: #343a40; /* Darker text color */
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 16px;
+  color: #495057; /* Regular text color */
+}
+
+/* Blog Read More Section */
+.blog-read-more p {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.blog-read-more .btn {
+  background-color: #007bff; /* Primary button color */
+  color: #ffffff;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.blog-read-more .btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Pagination Styling */
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination .page-item .page-link {
+  color: #007bff; /* Primary color for pagination links */
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d42ff; /* Active link color */
+  border-color: #0d42ff;
+  color: #ffffff;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .col-md-2,
+  .col-md-7,
+  .col-md-3 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .blog-content {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
