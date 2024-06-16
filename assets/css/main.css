@@ -1004,6 +1004,35 @@ section,
   font-size: 15px;
   font-weight: 600;
 }
+.hero-img {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; /* For positioning the image to the right */
+  overflow: hidden; /* Ensures no overflow from the container */
+}
+
+.hero-img img {
+  max-width: 50%; /* Ensures image scales down in smaller screens */
+  width: 10%; /* Adjust size as needed */
+  transform: translateX(10%); /* Move the image slightly to the right */
+  transition: all 0.3s ease; /* Smooth transition for size or position changes */
+}
+
+/* Optional: Adjust image size and position for larger screens */
+@media (min-width: 368px) {
+  .hero-img img {
+      width: 80%; /* Increase the size for larger screens */
+  }
+}
+
+/* Optional: Center the image for smaller screens */
+@media (max-width: 268px) {
+  .hero-img img {
+      transform: translateX(0); /* Center the image for smaller screens */
+      width: 90%; /* Make the image fit the container width */
+  }
+}
 
 /*--------------------------------------------------------------
 # Featured Services Section
